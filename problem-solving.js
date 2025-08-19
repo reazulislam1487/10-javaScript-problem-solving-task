@@ -148,4 +148,3 @@ function pingPongChallenge(n) {
 const n = 15;
 const pingPongResult = pingPongChallenge(n);
 console.log(pingPongResult);
-v
