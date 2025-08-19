@@ -1,4 +1,4 @@
-// problem 1 reverse a string
+v// problem 1 reverse a string
 function reverseFunction(str) {
   let reversed = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -7,8 +7,8 @@ function reverseFunction(str) {
   return reversed;
 }
 
-const reversValue = reverseFunction("reazul");
-console.log(`Reversed string: ${reversValue}`);
+const reversValue = reverseFunction("hello");
+console.log(reversValue);
 
 // problem 2 Count Vowels in a String
 
@@ -25,7 +25,7 @@ function countVowels(str, vowels) {
 }
 
 const countVowelValue = countVowels("programming", "aeiou");
-console.log(`Number of vowels in the string: ${countVowelValue}`);
+console.log(countVowelValue);
 
 // problem 3 check if a string is a palindrome
 
@@ -42,7 +42,7 @@ function isPalindrome(str) {
 
 let str = "madam";
 let isPalin = isPalindrome(str);
-console.log(isPalin ? `${str} is a palindrome` : `${str} is not a palindrome`);
+console.log(isPalin);
 
 // problem 4 Find the Maximum Number
 function findMaxNumber(arr) {
@@ -54,9 +54,9 @@ function findMaxNumber(arr) {
   }
   return max;
 }
-const numbers = [3, 5, 7, 2, 8, 10, 1];
+const numbers = [5, 9, 1, 3];
 const maxNumber = findMaxNumber(numbers);
-console.log(`The maximum number is: ${maxNumber}`);
+console.log(maxNumber);
 
 // problem 5 Remove Duplicates from an Array
 function removeDuplicates(arr) {
@@ -69,9 +69,9 @@ function removeDuplicates(arr) {
   return uniqueArray;
 }
 
-const arrayWithDuplicates = [1, 2, 3, 2, 4, 5, 1, 6];
+const arrayWithDuplicates = [1, 2, 2, 3, 4, 4];
 const uniqueArray = removeDuplicates(arrayWithDuplicates);
-console.log(`Array after removing duplicates: ${uniqueArray}`);
+console.log(uniqueArray);
 // problem 6 Sum of All Numbers in an Array
 function sumOfArray(arr) {
   let sum = 0;
@@ -80,9 +80,9 @@ function sumOfArray(arr) {
   }
   return sum;
 }
-const numbersArray = [1, 2, 3, 4, 5];
+const numbersArray = [1, 2, 3, 4];
 const totalSum = sumOfArray(numbersArray);
-console.log(`The sum of the array is: ${totalSum}`);
+console.log(totalSum);
 
 // problem 7 Find Even Numbers in an Array
 function findEvenNumbers(arr) {
@@ -95,9 +95,9 @@ function findEvenNumbers(arr) {
   return evenNumbers;
 }
 
-const numbersList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbersList = [1, 2, 3, 4, 5, 6];
 const evenNumbers = findEvenNumbers(numbersList);
-console.log(`Even numbers in the array: ${evenNumbers}`);
+console.log(evenNumbers);
 
 // problem 8 Capitalize First Letter of Each Word
 function capitalizeWords(str) {
@@ -109,9 +109,9 @@ function capitalizeWords(str) {
   return capitalizedWords.join(" ");
 }
 
-const sentence = "hello world from javascript";
+const sentence = "hello world";
 const capitalizedSentence = capitalizeWords(sentence);
-console.log(`Capitalized sentence: ${capitalizedSentence}`);
+console.log(capitalizedSentence);
 
 // problem 9 Find the Factorial of a Number
 function factorial(n) {
@@ -127,7 +127,7 @@ function factorial(n) {
 
 const number = 5;
 const factorialValue = factorial(number);
-console.log(`The factorial of ${number} is: ${factorialValue}`);
+console.log(factorialValue);
 
 // problem 10 PingPong Challenge
 function pingPongChallenge(n) {
@@ -143,8 +143,9 @@ function pingPongChallenge(n) {
       result.push(i);
     }
   }
-  return result;
+  return result.join(", ");
 }
 const n = 15;
 const pingPongResult = pingPongChallenge(n);
-console.log(`PingPong Challenge result for ${n}: ${pingPongResult.join(", ")}`);
+console.log(pingPongResult);
+v
